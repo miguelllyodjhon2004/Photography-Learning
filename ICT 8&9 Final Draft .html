@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Photography Passion</title>
+    <link rel="stylesheet" href="ICT 8&9 Final Draft.css">
+</head>
+<body>
+
+    <header class="hero fade-in">
+        <div class="hero-content">
+            <h1 class="slide-down">Capturing Moments, Telling Stories</h1>
+            <p class="slide-up">Photography is more than a hobby, it's a way to freeze time and share beauty from a new perspective.</p>
+			<p class="slide-up">Photography is the art and science of capturing images using light, and it has applications in various fields including art, science, and communication.</p>
+            <a href="#contact" class="cta-btn pop-in">Join Our Photography Journey</a>
+        </div>
+    </header>
+
+    <section class="about fade-in">
+        <h2 class="slide-left">Why We Love Photography</h2>
+        <p class="slide-center">
+            Photography allows us to express creativity, document unforgettable moments,
+            and connect with people through visual storytelling.
+        </p>
+    </section>
+
+    <section class="benefits fade-in">
+        <h2 class="slide-up">What You'll Discover</h2>
+        
+        <div class="benefit-container"> 
+
+            <div class="benefit-box hover-rise">
+                <img src="LOYDIE.jpg" alt="A person taking a photo for photography tips">
+                <h3>📸 Photography Tips</h3>
+                <p>Learn powerful techniques for capturing professional-quality shots.</p>
+            </div>
+
+            <div class="benefit-box hover-rise">
+                <img src="Abstract.jpeg" alt="Abstract photo or creative light painting for inspiration">
+                <h3>🎨 Creative Inspiration</h3>
+                <p>Explore themes and challenges that boost your creativity.</p>
+            </div>
+
+            <div class="benefit-box hover-rise">
+                <img src="Beach.jpeg" alt="Landscape photo or street photography scene for real-world experience">
+                <h3>🌍 Real-World Experiences</h3>
+                <p>Enjoy behind-the-scenes stories and photo adventures.</p>
+            </div>
+            
+            <div class="benefit-box hover-rise">
+                <img src="Different Lenses.jpg" alt="Photo of different camera lenses">
+                <h3>🔭 Lenses & Gear</h3>
+                <p>Understand how equipment choices impact your final image.</p>
+            </div>
+            
+            <div class="benefit-box hover-rise">
+                <img src="Natural Light.jpg" alt="Photo showing studio lights or natural light">
+                <h3>💡 Lighting Fundamentals</h3>
+                <p>Master the use of natural and artificial light sources.</p>
+            </div>
+            
+            <div class="benefit-box hover-rise">
+                <img src="STREET.jpg" alt="Macro photo or astrophotography image">
+                <h3>🌟 Niche Photography</h3>
+                <p>Dive into specialized areas like macro, portrait, and street photography.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="testimonials fade-in">
+        <h2 class="slide-up">What People Say</h2>
+
+        <div class="testimonial hover-glow">
+            <p>"Your photos inspire me to try photography again!"</p>
+            <span>- Geneviere, Beginner Photographer</span>
+        </div>
+
+        <div class="testimonial hover-glow">
+            <p>"Beautiful shots! You capture emotion perfectly."</p>
+            <span>- Avel, Art Student</span>
+        </div>
+		
+        <div class="testimonial hover-glow">
+            <p>"It is really inspiring!."</p>
+            <span>- Jochell, a Teacher</span>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+        <h2 class="slide-left">Stay Connected with Us</h2>
+        <p class="slide-right">Sign up for updates and photography tips!</p>
+
+        <form class="pop-in" onsubmit="return handleSubscription(event)">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    
+    <script>
+        function handleSubscription(event) {
+            event.preventDefault(); // Stop the form from submitting normally (page refresh)
+            const form = event.target;
+            
+            // Get the name from the input field
+            const nameInput = form.querySelector('input[type="text"]').value;
+            const userName = nameInput || 'Photographer';
+
+            // Display confirmation message using the browser's alert box
+            alert(`Thank you for subscribing, ${userName}! You will receive our photography tips soon.`);
+            
+            // Clear the form fields after successful 'subscription'
+            form.reset(); 
+            return false; // Prevent navigation
+        }
+    </script>
+
+    <footer class="fade-in">
+        <p>© 2025 KC and Llyod | Designed for Photography Project Website</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* GENERAL STYLE */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0fdf4;          /* very light cream/off-white (Matcha Theme) */
+    color: #3b5247;               /* dark matcha text */
+    scroll-behavior: smooth;
+}
+
+/* Headings: Cursive and Bold Font Style (General) */
+h1, h2, h3 {
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    /* Default center alignment retained for all general headings */
+    text-align: center; 
+}
+
+/* --- (Animations and KEYFRAMES sections omitted for brevity) --- */
+
+/* HEADER SECTION: USES GREEN.JPG AS BACKGROUND */
+.hero {
+    /* Set the background image, prevent tiling, center it, and make it cover the area */
+    background: url('GREEN.jpg') no-repeat center center/cover;
+    
+    /* Add a subtle dark overlay for better text readability */
+    background-color: rgba(0, 0, 0, 0.35); 
+    background-blend-mode: overlay; 
+    
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Main Heading: Increased Font Size and Shadow added for contrast */
+.hero h1 {
+    font-size: 3.5em; /* Increased size to make it stand out */
+    margin-bottom: 20px;
+    /* Added text shadow (black with slight blur) for better contrast and definition */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Paragraph alignment in header */
+.hero p {
+    text-align: center; 
+    max-width: 700px;
+    margin: 10px auto;
+    /* Added shadow to body text as well for consistency against the image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* CTA Button (Placement Lowered) */
+.cta-btn {
+    background: white;
+    color: #5d8e7c;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin-top: 30px; 
+    display: inline-block;
+}
+.cta-btn:hover {
+    background: #3b5247;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* ---------------------------------------------------- */
+/* ABOUT SECTION: CENTERED and HEADING STYLED */
+/* ---------------------------------------------------- */
+.about {
+    padding: 50px 20px;
+    text-align: center; /* CENTER SECTION CONTENT */
+}
+
+/* Specific styling for 'Why We Love Photography' heading */
+.about h2 {
+    color: #3b5247;
+    text-align: center; /* Ensures centering */
+    font-size: 2.2em; /* Increased size slightly */
+    font-weight: 900; /* Ensures it is very bold */
+    margin-bottom: 20px;
+}
+
+/* Paragraph alignment for About section */
+.about p {
+    text-align: center; /* Center paragraph */
+    max-width: 800px;
+    margin: 0 auto; /* Centers the paragraph block within the section */
+}
+/* ---------------------------------------------------- */
+
+
+/* BENEFITS SECTION */
+.benefits {
+    background: #eaf4e3; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* 'What You'll Discover' Heading Styling */
+.benefits h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* New bold font */
+    font-weight: 900; /* Explicitly bold */
+    font-size: 2em; /* REDUCED SIZE as requested */
+    color: #3b5247; /* Keep the dark matcha color */
+}
+
+.benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 30px;
+}
+
+.benefit-box {
+    background: white;
+    padding: 20px; 
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(59, 82, 71, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Image styling: 'cover' fills the entire frame */
+.benefit-box img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #5d8e7c;
+}
+
+/* Benefit Box Titles (h3) Styling */
+.benefit-box h3 {
+    color: #5d8e7c;
+    margin-top: 0;
+    font-weight: bold; /* Ensure bold */
+    /* Added text shadow for visual depth against the white box */
+    text-shadow: 1px 1px 2px rgba(59, 82, 71, 0.3);
+}
+
+.benefit-box p {
+    text-align: center;
+}
+
+/* card rise on hover */
+.hover-rise:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 25px rgba(93, 142, 124, 0.25); 
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    background: #f8fffb; 
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 500px;
+    border-left: 4px solid #84a98c;
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #5d8e7c;
+}
+
+/* glow hover */
+.hover-glow:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(93, 142, 124, 0.4); 
+}
+
+/* CONTACT FORM */
+.contact {
+    background: #dceae3; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Paragraph alignment in Contact section */
+.contact p {
+    text-align: center;
+}
+
+.contact input, .contact button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #aebc9e; 
+    transition: 0.3s ease;
+}
+
+.contact input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #84a98c;
+    border-color: #5d8e7c;
+}
+
+.contact button {
+    background: #5d8e7c; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact button:hover {
+    background: #3b5247; 
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #3b5247; 
+    color: white;
+}
